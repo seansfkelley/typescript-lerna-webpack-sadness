@@ -1,0 +1,19 @@
+{
+  "name": "@local/parent",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "tsc": "echo 'running build with tsc...' && tsc",
+    "webpack": "echo 'running build with webpack...' && webpack"
+  },
+  "dependencies": {
+    "@local/child": "1.0.0",
+    "@local/grandchild": "1.0.0"
+  },
+  "devDependencies": {
+    "ts-loader": "^0.8.2",
+    "typescript": "^2.0.3",
+    "webpack": "^1.13.2"
+  }
+}
